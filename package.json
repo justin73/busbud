@@ -14,7 +14,8 @@
     "ejs": "2.3.3",
     "express": "4.13.3",
     "node-fetch": "^1.6.3",
-    "pg": "4.x"
+    "pg": "4.x",
+    "react-select": "^0.9.1"
   },
   "repository": {
     "type": "git",

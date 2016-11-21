@@ -157,6 +157,15 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"\/views\/layouts\/default.jsx": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/views\/layouts\/default-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"\/views\/pages\/db.ejs": {
 		"ft": 8192,
 		"oA": 2,
