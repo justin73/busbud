@@ -17,15 +17,16 @@ var App = React.createClass({
                     operator_obj_list = data.operators
                     $.each(departure_list, function(index, this_obj){
                         depature_time = this_obj.departure_time
-                        depature_tag = "<p className='time'>"+depature_time+"</p>"
+                        depature_tag = "<p class='time'> Depature Time: "+depature_time+"</p>"
                         arrival_time = this_obj.arrival_time
-                        arrival_tag = "<p className='time'>"+arrival_time+"</p>"
+                        arrival_tag =  "<p class='time'> Arrival  Time: "+arrival_time+"</p>"
                         prices = this_obj.prices.total
-                        prices_tag = "<p className='price'>"+prices+"</p>"
+                        prices_tag = "<p class='price'>Price: "+prices/100.00+"</p>"
                         seat_class = this_obj.class
-                        seat_tag = "<p className='seat'>"+seat_class+"</p>"
+                        seat_tag = "<p class='seat'>Class: "+seat_class+"</p>"
+                        left_col = "<div class='bus_info'>"+depature_tag+arrival_tag+prices_tag+seat_tag+"</div>"
                         link = this_obj.links.deeplink
-                        link_tag = "<p className='link'>"+link+"</p>"
+                        link_tag = "<div><a class='link' href='"+link+"'>BOOK NOW</a></div>"
                         operator_id =this_obj.operator_id
                         operator_img = ""
                         $.each(operator_obj_list, function(index, operator_obj){
@@ -33,8 +34,8 @@ var App = React.createClass({
                                 operator_img = operator_obj.logo_url
                             }
                         })
-                        operator_logo_tag = "<img className='logo' src="+operator_img+"></img>"
-                        new_item = '<li className="result_item"><div className="result_conatiner">'+depature_tag+arrival_tag+prices_tag+seat_tag+link_tag+operator_logo_tag+'</div></li>'
+                        operator_logo_tag = "<div class='logo_container'><img class='logo' src="+operator_img+"></img></div>"
+                        new_item = '<li class="result_item"><div class="result_conatiner">'+left_col+operator_logo_tag+link_tag+'</div></li>'
                         $("#result_list").append(new_item)
                     })
                 }
