@@ -32,6 +32,20 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"\/myapp\/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "\/build\/myapp\/node_modules",
+		"oF": 0
+		},
+	"\/myapp\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/myapp\/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/node_modules": {
 		"ft": 65536,
 		"oA": 2,
@@ -51,6 +65,15 @@
 		"oA": 2,
 		"oAP": "\/Procfile",
 		"oF": 0
+		},
+	"\/public\/js\/test.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/public\/js\/test-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
 		},
 	"\/public\/lang-logo.png": {
 		"ft": 32768,

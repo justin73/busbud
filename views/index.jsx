@@ -4,6 +4,7 @@ var DefaultLayout = require('./layouts/default');
 
 class HelloMessage extends React.Component {
   handleOptionsButtonClick(e) {
+  	console.log("fetch for results")
   	fetch('https://napi.busbud.com/x-departures/dr5reg/f25dvk/2017-07-03/poll?adult=1&child=0&senior=0&lang=en&currency=CAD').then((response) => {
           return response.json();
       }).catch((err) => {
@@ -17,7 +18,6 @@ class HelloMessage extends React.Component {
 			<img src="/logo.png"></img>
 		</div>
 		<div>
-			<form>
 				<div>
 					<input className="depature" value="NEW YORK" readOnly></input>
 					<input className="destination" value="MONTREAL" readOnly></input>
@@ -45,8 +45,7 @@ class HelloMessage extends React.Component {
 						Child
 					</label>
 				</div>
-				<button className="search"  onClick={this.props.handleOptionsButtonClick}> Search</button>
-			</form>
+				<button className="search"  onClick={this.handleOptionsButtonClick}> Search</button>
 		</div>
       </DefaultLayout>
     );
