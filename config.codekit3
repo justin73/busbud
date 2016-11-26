@@ -66,6 +66,15 @@
 		"oAP": "\/Procfile",
 		"oF": 0
 		},
+	"\/public\/js\/result_list.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/public\/js\/result_list-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"\/public\/js\/test.js": {
 		"ft": 64,
 		"mi": 0,
@@ -220,6 +229,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/views\/partials\/search.ejs",
+		"oF": 0
+		},
+	"\/views\/test.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/views\/test.html",
 		"oF": 0
 		}
 	},

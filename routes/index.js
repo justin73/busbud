@@ -1,3 +1,4 @@
+
 exports.index = function(req, res){
 	response = res
 	var request = require('request');
@@ -23,8 +24,7 @@ exports.search = function(req, res){
 				},
 	    uri: 'https://napi.busbud.com/x-departures/dr5reg/f25dvk/2017-07-03/poll?adult=1&child=0&senior=0&lang=en&currency=CAD',
 	    method: 'GET'
-	  }, function (err, res, body) {
-	    console.log(res)
-	    console.log(body)
+	  }, function (err, response, body) {
+	    res.json(body)
   	});
 };
