@@ -1,7 +1,6 @@
 exports.index = function(req, res){
 	response = res
 	var request = require('request');
-	var str2json = require('string-to-json');
 	request({
 	    headers: {
 				    'Accept': 'application/vnd.busbud+json; version=2; profile=https://schema.busbud.com/v2/',
@@ -17,7 +16,6 @@ exports.index = function(req, res){
 exports.search = function(req, res){
 	response = res
 	var request = require('request');
-	var str2json = require('string-to-json');
 	request({
 	    headers: {
 				    'Accept': 'application/vnd.busbud+json; version=2; profile=https://schema.busbud.com/v2/',
