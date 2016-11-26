@@ -171,14 +171,11 @@
 		"sC": 0,
 		"tS": 0
 		},
-	"\/views\/index.jsx": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/views\/index-min.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
+	"\/views\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/views\/index.html",
+		"oF": 0
 		},
 	"\/views\/layouts\/default.jsx": {
 		"ft": 64,
