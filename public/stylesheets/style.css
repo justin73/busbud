@@ -11,6 +11,7 @@ body input[type="text"] {
   border: solid 1px #fff;
   box-shadow: inset 1px 1px 2px 0 #707070;
   transition: box-shadow 0.3s;
+  text-align: center;
 }
 body input[type="text"]:focus {
   box-shadow: inset 1px 1px 2px 0 #c9c9c9;
@@ -23,7 +24,7 @@ body input[type="text"]:focus {
 .search_section {
   text-align: center;
   margin: 0 auto;
-  width: 50%;
+  width: 80%;
   padding: 20px;
 }
 .search_section .input_container {
@@ -33,6 +34,8 @@ body input[type="text"]:focus {
 .search_section .input_container input {
   margin: 20px;
   border: 0px;
+  text-align: center;
+  border-radius: 5px;
 }
 .search_section .search {
   width: 100px;
@@ -40,6 +43,7 @@ body input[type="text"]:focus {
   margin: 25px 0px;
   border: 0px;
   background: white;
+  border-radius: 5px;
 }
 .search_section .search i {
   font-size: 35px;
@@ -74,7 +78,7 @@ body input[type="text"]:focus {
 .result_list .result_item .bus_info div {
   padding: 20px;
   padding-bottom: 0px;
-  border-right: 1px solid #006694;
+  border-right: 5px solid #9d3872;
 }
 .result_list .result_item .bus_info div .time {
   font-size: 15px;
@@ -96,7 +100,11 @@ body input[type="text"]:focus {
   font-weight: 600;
   text-align: right;
 }
-.result_list .result_item .bus_info div .price span {
+.result_list .result_item .bus_info div .price span.number {
+  font-size: 16px;
+  font-weight: 800;
+}
+.result_list .result_item .bus_info div .price span.currency {
   font-size: 12px;
   font-weight: 200;
   margin-left: 5px;
