@@ -552,15 +552,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/public\/js\/test.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/public\/js\/test-min.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
-		},
 	"\/public\/lang-logo.png": {
 		"ft": 32768,
 		"iS": 2293,
@@ -649,33 +640,6 @@
 		"oAP": "\/public\/stylesheets\/style-min.css",
 		"oF": 0,
 		"oS": 0
-		},
-	"\/README.md": {
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"eLB": 0,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/routes\/index.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/routes\/index-min.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
 		},
 	"\/views\/index.html": {
 		"ft": 8192,

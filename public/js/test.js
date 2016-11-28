@@ -118,7 +118,11 @@ var SearchBox = React.createClass({
                     <div className="input_container">
                         <input type="text" className="depature" value="NEW YORK" readOnly></input>
                         <input type="text" className="destination" value="MONTREAL" readOnly></input>
+<<<<<<< HEAD
                         <input type="text" className="date" value="2017-07-29" readOnly></input>
+=======
+                        <input type="text" className="date" value="2017-07-03" readOnly></input>
+>>>>>>> 30d94a6d20946fb6135362dab48b165f729b7c68
                         <select className="currency_group" ref="currency_group">
                             <option value="CAD">CAD</option>
                             <option value="USD">USD</option>
