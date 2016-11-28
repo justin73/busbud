@@ -60,13 +60,13 @@ var App = React.createClass({
             searchResults: final_departure_list,
         })
     },
-    search:function(){
+    search:function(search_url){
         this.setState({
             search_status: true
         })
         $.ajax({
             type:"GET",
-            url:"/initial_search",
+            url:search_url,
             success:function(data){
                 data = $.parseJSON(data)
                 if (data.complete){
@@ -78,7 +78,7 @@ var App = React.createClass({
                 else{
                     $.ajax({
                         type:"GET",
-                        url:"/initial_search",
+                        url:search_url,
                         success:function(data){
                             data = $.parseJSON(data)
                             this.showResults(data)
@@ -107,7 +107,9 @@ var App = React.createClass({
 
 var SearchBox = React.createClass({
     createAjax:function(){
-        this.props.search()
+        var currency = React.findDOMNode(this.refs.currency_group).value;
+        var search_url = "/initial_search?adult=1&child=0&senior=0&lang=en&currency="+currency
+        this.props.search(search_url)
     },
     render:function(){
         return(
@@ -117,8 +119,12 @@ var SearchBox = React.createClass({
                         <input type="text" className="depature" value="NEW YORK" readOnly></input>
                         <input type="text" className="destination" value="MONTREAL" readOnly></input>
                         <input type="text" className="date" value="2017-07-03" readOnly></input>
+                        <select className="currency_group" ref="currency_group">
+                            <option value="CAD">CAD</option>
+                            <option value="USD">USD</option>
+                        </select>
                     </div>
-                    <button id="search_btn" className="search hvr-sweep-to-bottom" onClick={this.createAjax}> Search</button>
+                    <button id="search_btn" className="search hvr-sweep-to-bottom" onClick={this.createAjax}><i className="fa fa-search"></i></button>
                 </div>
             </div>
         )
@@ -154,7 +160,7 @@ var ResultItem = React.createClass({
                         <div>
                             <p className='time'>{this.props.departure_time}<span className='location'>{this.props.depart_location}<span className='city'>( {this.props.depart_city} )</span></span></p>
                             <p className='time'>{this.props.arrival_time}<span className='location'>{this.props.dest_location}<span className='city'>( {this.props.arrival_city} )</span></span></p>
-                            <p className='price'><span className="number">${this.props.prices}</span><span className="currency">CAD</span></p>
+                            <p className='price'><span className="number">${this.props.prices}</span></p>
                             <p className='seat'>{this.props.class}</p>
                         </div>
                     </div>
