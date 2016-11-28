@@ -6,7 +6,7 @@ var App = React.createClass({
     getInitialState: function(){
         return{
             searchResults: [],
-
+            search_status: false
         }
     },
     showResults: function(response){
@@ -61,6 +61,9 @@ var App = React.createClass({
         })
     },
     search:function(){
+        this.setState({
+            search_status: true
+        })
         $.ajax({
             type:"GET",
             url:"/initial_search",
@@ -68,6 +71,9 @@ var App = React.createClass({
                 data = $.parseJSON(data)
                 if (data.complete){
                     this.showResults(data)
+                    this.setState({
+                        search_status: false
+                    })
                 }
                 else{
                     $.ajax({
@@ -76,6 +82,9 @@ var App = React.createClass({
                         success:function(data){
                             data = $.parseJSON(data)
                             this.showResults(data)
+                            this.setState({
+                                search_status: false
+                            })
                         }.bind(this)
                     })
                 }
@@ -89,6 +98,8 @@ var App = React.createClass({
                     <img src="/logo.png"></img>
                 </div>
                 <SearchBox search={this.search}/>
+                <div className="search_status">{this.state.search_status}</div>
+                {(this.state.search_status ? <div className="loading_container"><i className="fa fa-spinner fa-pulse fa-fw"></i><span>Loading...</span></div> : '')}
                 <Results searchResults = {this.state.searchResults} />
             </div>
         )
@@ -97,6 +108,7 @@ var App = React.createClass({
 
 var SearchBox = React.createClass({
     createAjax:function(){
+        this.props.loading = "loading..."
         this.props.search()
     },
     render:function(){

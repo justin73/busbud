@@ -19,6 +19,10 @@ body{
 		display: block;
 		margin: 0 auto;
 		padding: 50px;
+		width: 50%;
+		@media screen and (max-width: 640px) {
+			width: 100%;
+		}
 	}
 
 }
@@ -59,11 +63,29 @@ body{
         }
 	}
 }
+.loading_container{
+	width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px 30px 30px 30px;
+    i{
+    	font-size: 24px;
+    	color: white;
+    }
+    span{
+    	color: white;
+    	margin-left: 5px;
+    }
+}
 .result_list{
 	list-style: none;
 	width: 70%;
+	@media screen and (max-width: 640px) {
+		width: 100%;
+	}
 	margin: 0 auto;
 	display: block;
+	padding-left: 0px;
 	.result_item{
 		background: #7dc8e5;
 		border-radius: 10px;
@@ -74,6 +96,9 @@ body{
 		}
 		.bus_info{
 			width: 70%;
+			@media screen and (max-width: 640px) {
+				width: 100%;
+			}
 			div{
 				padding: 20px;
 				padding-bottom: 0px;
@@ -86,6 +111,9 @@ body{
 					    text-align: right;
 					    font-weight: 200;
 					    float: right;
+					    @media screen and (max-width: 640px) {
+							width: 70%;
+						}
 					    span.city{
 					    	margin-left: 5px;
 					    	font-weight: 800;
@@ -115,6 +143,9 @@ body{
 		}
 		.logo_container{
 			width: 30%;
+			@media screen and (max-width: 640px) {
+				display: none;
+			}
 			.flex_container{
 				display: flex;
 			    height: 157px;
@@ -135,6 +166,7 @@ body{
 			    width: 50%;
 			    margin: 0 auto;
 			    text-align: center;
+			    color: #066491;
 			}
 
 		}
