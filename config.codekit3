@@ -554,11 +554,11 @@
 		},
 	"\/public\/js\/test.js": {
 		"ft": 64,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "\/public\/js\/test-min.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 0,
 		"tS": 0
 		},
 	"\/public\/lang-logo.png": {
@@ -2468,8 +2468,8 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
-		"minifyOutput": 1,
-		"syntaxCheckerStyle": 1,
+		"minifyOutput": 0,
+		"syntaxCheckerStyle": 0,
 		"transpilerStyle": 0
 		},
 	"languageDefaultsJSON": {

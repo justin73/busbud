@@ -98,8 +98,6 @@ var App = React.createClass({
                     <img src="/logo.png"></img>
                 </div>
                 <SearchBox search={this.search}/>
-
-                <div className="search_status">{this.state.search_status}</div>
                 {(this.state.search_status ? <div className="loading_container"><i className="fa fa-spinner fa-pulse fa-fw"></i><span>Loading...</span></div> : '')}
                 <Results searchResults = {this.state.searchResults} />
             </div>
@@ -109,7 +107,6 @@ var App = React.createClass({
 
 var SearchBox = React.createClass({
     createAjax:function(){
-        this.props.loading = "loading..."
         this.props.search()
     },
     render:function(){
