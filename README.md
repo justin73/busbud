@@ -27,7 +27,7 @@ It was a great learning experience. I really appreciated it.
 
 >Prior to this, I didn't have any experience in Node.js and React.js. My work experience is mainly involving Python and Backbone. However, i think, this project gave me the opportunity to let you guys see, within a short amount of time and with my experience and knowledge skills, i can pull this off. 
 
-Work has been creazy for me recently. After 2+ years of working as a dev, i don't really feel the joy of learning new things any more. But yesterday, it was the first time in a long time that I felt it again, my back was hurting after sitting all day in front of the computer but i was happy, actally i was excited that I finished something which was out of my knowledge scope a week ago. 
+>Work has been creazy for me recently. After 2+ years of working as a dev, i don't really feel the joy of learning new things any more. But yesterday, it was the first time in a long time that I felt it again, my back was hurting after sitting all day in front of the computer but i was happy, actally i was excited that I finished something which was out of my knowledge scope a week ago. 
 
 
 So again, thank you for giving me the chance :-D
